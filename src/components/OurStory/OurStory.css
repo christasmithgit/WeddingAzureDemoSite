@@ -1,0 +1,104 @@
+/*============== 6. Story ==============*/
+.story-timeline {
+    padding: 50px 0;
+    position: relative;
+}
+
+.story-timeline-title{
+    text-align: center !important
+}
+
+.story-timeline__text {
+    padding: 30px 30px;
+    position: relative;
+    text-align:justify;
+    z-index: 9;
+}
+
+    .story-timeline__text h4 {
+        font-style: initial;
+        font-weight: 600;
+        margin-bottom: 15px;
+        position: relative;
+    }
+
+.story-timeline-image {
+    max-width: 70%;
+}
+
+@media(min-width: 768px) {
+    .story-timeline__col {
+        width: 50%;
+    }
+
+    .story-timeline__col--left {
+        padding-right: 45px;
+        position: relative;
+    }
+
+        .story-timeline__col--left .story-timeline__text {
+            text-align: right;
+        }
+
+    .story-timeline__col--right {
+        padding-left: 45px;
+    }
+
+    .story-timeline__col--left:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 1px;
+        height: 100%;
+        background-color: #dfdfdf;
+    }
+
+    .story-timeline__text {
+        padding: 50px 50px;
+    }
+
+        .story-timeline__text h4:before {
+            content: "";
+            position: absolute;
+            height: 1px;
+            background: #dfdfdf;
+            left: -33px;
+            width: 26px;
+            top: 14px;
+        }
+
+    .story-timeline__col--left h4:before {
+        left: auto;
+        right: -33px;
+    }
+
+    .story-timeline__text .icon {
+        position: absolute;
+        left: -56px;
+        padding: 3px 0;
+        margin-top: 2px;
+        top: 0;
+    }
+
+    .story-timeline__col--left .icon {
+        left: auto;
+        right: -55px;
+    }
+}
+
+
+
+@media(min-width: 992px) {
+    .story-timeline__text h4 {
+        padding-left: 78px;
+    }
+
+    .story-timeline__col--left h4 {
+        padding-right: 78px;
+    }
+
+    .story-timeline__text h4:before {
+        width: 100px;
+    }
+}

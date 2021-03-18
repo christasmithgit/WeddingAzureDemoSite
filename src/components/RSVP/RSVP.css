@@ -1,0 +1,151 @@
+/*============== 10. RSVP ==============*/
+.rsvp {
+	background-image: url("https://bgstorageaccount.blob.core.windows.net/bgweddingimages/reception.jpg"); /* Change to your RSVP image here */
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 90px 0;
+}
+
+.rsvp-box {
+	padding: 50px 30px 60px;
+	position: relative;
+    background-color: white;
+}
+
+.rsvp-box__title {
+	margin-bottom: 20px;
+}
+
+.rsvp-box__subtitle {
+	font-size: 16px;
+}
+
+.rsvp-box__subtitle mark {
+	background: none;
+	font-style: initial;
+}
+
+@media(min-width: 768px) {
+	.rsvp-box {
+		padding: 50px 40px 110px;
+	}
+}
+
+/* Form */
+.rsvp-box .rsvp-form {
+	margin-top: 50px;
+}
+
+.rsvp-form input,
+.rsvp-form textarea,
+.rsvp-form select {
+	width: 100%;
+	font-style: initial;
+	color: #1c1c1c;
+	padding: 5px 10px;
+	margin-bottom: 25px;
+	border-radius: 0;
+}
+
+.rsvp-form input,
+.rsvp-form select {
+	border: 0;
+	border-bottom: 1px solid #898989;
+}
+
+.rsvp-form select {
+    background: none;
+    border-radius: 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	color: #5f5f55;
+}
+
+.rsvp-form textarea {
+	border: 1px solid #898989;
+}
+
+.rsvp-form-field {
+	position: relative;
+}
+
+.rsvp-form-field__error {
+	display: none;
+	font-size: 15px;
+	color: #c64141;
+	font-style: initial;
+	position: absolute;
+	bottom: -18px;
+	left: 5px;
+}
+
+.rsvp-form input.error {
+	border-bottom: 1px solid #c64141;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: #5f5f55;
+}
+::-moz-placeholder { /* Firefox 19+ */
+	color: #5f5f55;
+}
+:-ms-input-placeholder { /* IE 10+ */
+	color: #5f5f55;
+}
+:-moz-placeholder { /* Firefox 18- */
+	color: #5f5f55;
+}
+
+.rsvp-form-submit {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: #ffd7d7;
+	border: 0;
+	text-transform: uppercase;
+	font-size: 20px;
+	padding: 11px 10px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	cursor: pointer;
+	transition: background-color .3s ease;
+	-webkit-transition: background-color .3s ease;
+}
+
+.rsvp-form-submit .icon {
+	display: none;
+	position: absolute;
+}
+
+.rsvp-form__right {
+	margin-top: 10px;
+}
+
+@media(min-width: 768px) {
+	.rsvp-form__left {
+		width: 45%;
+	}
+
+	.rsvp-form__right {
+		width: 49%;
+		margin-top: 0;
+	}
+
+	.rsvp-form select {
+		margin-bottom: 0;
+	}
+
+	.rsvp-form-submit {
+		max-width: 300px;
+	}
+
+	.rsvp-form-submit .icon:first-of-type {
+		left: 100px;
+	}
+
+	.rsvp-form-submit:hover .icon {
+		display: inline;
+	}
+}

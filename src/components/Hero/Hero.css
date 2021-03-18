@@ -1,0 +1,61 @@
+/*============== 3. Hero ==============*/
+.hero {
+    background-image: url("https://th.bing.com/th/id/R2587b389f37770fe88561750fdc98c85?rik=f5rKdlVMoqstqA&riu=http%3a%2f%2fphilchester.com%2fwp-content%2fuploads%2f2017%2f06%2fYosemite-Engagement-Photos-3.jpg&ehk=xB5rFJ03t%2bx3L5Agd2asAIwxC5iyw7BhxFY3a50woCg%3d&risl=&pid=ImgRaw");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+	padding: 50px 0;
+	color: #fff;
+	min-height: 75vh;
+
+}
+
+.hero__title {
+	font-size: 42px;
+}
+
+.hero-text{
+    text-align: center;
+}
+
+.hero__wreath {
+	width: 250px;
+}
+
+.hero__wreath--up {
+	transform: rotate(178deg);
+	-webkit-transform: rotate(178deg);
+	-ms-transform: rotate(178deg);
+	margin-bottom: -6px;
+}
+
+.hero__wreath--down {
+	margin-top: -56px;
+}
+
+.hero__date {
+	font-size: 28px;
+	font-weight: 700;
+	font-style: initial;
+}
+
+
+@media(min-width: 768px) {
+	.hero__title {
+		font-size: 52px;
+	}
+}
+
+@media(min-width: 992px) {
+	.hero__wreath {
+		width: 300px;
+	}
+}
+
+
+@media(min-width: 1200px) {
+
+	.hero__wreath {
+		width: 500px;
+	}
+}

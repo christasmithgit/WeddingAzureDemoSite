@@ -1,0 +1,38 @@
+
+.giftlist-hero-image {
+    background-image: url("https://static.wixstatic.com/media/bc3ec7bc825c4e6ca746c659189cea83.jpg/v1/fill/w_1903,h_700,al_c,q_85,usm_1.20_1.00_0.01/bc3ec7bc825c4e6ca746c659189cea83.webp");
+    height: 1200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.giftlist-hero-image-text {
+    width: 90%;
+    padding: 2rem;
+    background-color: white;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gift-list-image {
+    max-width: 90%;
+    border-radius: 50%;
+    margin: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.gift-list-button {
+    background-color: #efefef;
+    padding: 1rem;
+    border: solid black 1px;
+    color: black;
+}
+
+.giftlist-hero-image-text-last{
+    margin-bottom:3rem;
+}

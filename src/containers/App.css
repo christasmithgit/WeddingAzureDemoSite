@@ -1,0 +1,152 @@
+*:focus {
+	outline: none!important;
+}
+
+html {
+	background-color: #efefef;
+}
+
+h1 {
+	font-size: 36px;
+    font-family: 'Dancing Script', cursive;
+}
+
+h2 {
+	font-family: "Cormorant Garamond";
+	font-weight: 600;
+	font-size: 32px;
+}
+
+h3 {
+	font-family: "Cormorant Garamond";
+	font-size: 28px;
+}
+
+h4 {
+	font-family: "Cormorant Garamond";
+	font-size: 24px;
+}
+
+h5 {
+	font-family: "Cormorant Garamond";
+	font-size: 20px;
+}
+
+h6 {
+	font-family: "Cormorant Garamond";
+	font-size: 18px;
+}
+
+p {
+	font-family: "Cormorant Garamond";
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+svg {
+	max-width: 100%;
+}
+
+a:hover,
+a:focus {
+	text-decoration: none;
+}
+
+/* 1.1 Animations */
+@-webkit-keyframes pulse {
+    0% {-webkit-transform: scale(0.2, 0.2); opacity: 0;}
+    50% {opacity: 1;}
+    100% {-webkit-transform: scale(1.5, 1.5); opacity: 0;}
+}
+
+.animation-pulse {
+	animation: pulse 2s ease-out;
+    animation-iteration-count: infinite;
+    opacity: 0;
+}
+
+/* backgrounds */
+.u-bg-white {
+	background-color: #fff;
+}
+
+.u-bg-primary {
+	background-color: #faf4f5;
+}
+
+.u-bg-grey {
+	background-color: #F7F3F1;
+}
+
+.u-bg-light-grey{
+	background-color: #efefef;
+}
+
+.u-bg-half-grey {
+	position: relative;
+	background-color: #F7F3F1;
+}
+
+@media(min-width: 991px) {
+	.u-bg-half-grey {
+		background-color: transparent;
+	}
+
+	.u-bg-half-grey:before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 30%;
+		background-color: #F7F3F1;
+	}
+}
+
+.u-bg-half-grey--lg:before {
+	bottom: 20%;
+}
+
+.u-bg-cover {
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.u-bg-p-top {
+	background-position: top!important;
+}
+
+.u-bg-p-center {
+	background-position: center!important;
+}
+
+.u-bg-p-bottom {
+	background-position: bottom!important;
+}
+
+
+/* Extra small css */
+
+.guest-not-found{
+    background-color: #efefef;
+	text-align: center;
+}
+
+.loading-main {
+	text-align: center;
+    background-color: #efefef;
+}
+
+footer {
+	text-align: center;
+    background-color: #efefef;
+}
+
