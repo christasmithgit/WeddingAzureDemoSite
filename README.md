@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### Main information
 
-A demo of this repo can be found here: 
+A demo of this repo can be found here: https://bgstorageaccount.z16.web.core.windows.net/
 
 This site is hosted as a static website on Azure Blob Storage - https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-static-website
 
