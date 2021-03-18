@@ -1,6 +1,26 @@
-# Getting Started with Create React App
+# Static Web App Created using React.js
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+### Main information
+
+A demo of this repo can be found here: 
+
+This site is hosted as a static website on Azure Blob Storage - https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-static-website
+
+This repo can be cloned and adapted to fit the needs of the user. 
+The site is designed with three main paths:
+
+- '/' - Homepage 
+- '/Invite/somecode' - This is the main page and can only be entered by entering the pasword 'password1'
+- /AnyOtherUrl - Any other url will naviagate you to the not found page.
+
+The site takes a URL param /invite/:code -> in a real world application, you would use this to identify the wedding guest to some kind of back-end storage. In my case, I used Azure Functions with Azure table storage but purposely left this out of the repo for re-usability. See here for more information on how you can do the same here: https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-storage-table-output?tabs=csharp
+
+Please read the comments carefully in the code as they explain the render conditions and where you would need to insert the API calls.
+### Good luck!
+
+----- 
 
 ## Available Scripts
 
@@ -31,40 +51,3 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
