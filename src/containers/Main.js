@@ -21,7 +21,7 @@ class Main extends Component {
         isAuthenticated : false,
         showPasswordErrorMessage: false,
         isLoaded: false,
-        guestName:"",
+        guestName: "",
         guestId: "",
         partOfWedding: "",
         guestHasRsvpd: false,
@@ -60,10 +60,11 @@ class Main extends Component {
         
         console.log("Guest information recieved:");
 
+        const { id } = this.props.match.params
         // Simulate valid response back from function.
         this.setState({
-          guestName :"Christa Smith",
-          id: "1245",
+          guestName : "Guest Name",
+          id: id,
           partOfWedding: "AllDay",
           guestHasRsvpd: false,
           isLoaded: true,
@@ -71,8 +72,8 @@ class Main extends Component {
   
         // Uncomment this out to see how the website looks for evening guests
         // this.setState({
-        //   guestName :"Christa Smith",
-        //   guestId: "123432",
+        //   guestName :"Guest Name",
+        //   guestId: id,
         //   partOfWedding: "Evening",
         //   isLoaded: true,
         //   guestHasRsvpd: false,

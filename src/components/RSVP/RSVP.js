@@ -1,6 +1,7 @@
 import React from 'react';
 import './RSVP.css'
 const rsvp = (props) => {
+// You would need to add validation to this form. I have taken this out due to complexity of the form I used.
     return (
         <section className="rsvp" id="rsvp">
 		<div className="container">
